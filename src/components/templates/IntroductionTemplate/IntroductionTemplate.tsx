@@ -3,7 +3,7 @@ export default function IntroductionTemplate() {
 
 
     return (
-        <div className={"w-full h-full"} style={{backgroundImage: `url('/assets/images/noise-background.jpg')`}} >
+        <div className={"w-full h-screen"} style={{backgroundImage: `url('/assets/images/noise-background.jpg')`}} >
             <div className={"flex justify-center items-center w-full h-full flex-col"}>
                 <div className={"text-center text-6xl mb-10"}>
                     Portfolio

@@ -9,7 +9,7 @@ export default function ProjectContent() {
             <h1 className={"text-4xl font-bold font-mono"}>Projects</h1>
             <div className={"flex flex-col items-center border-l-2 "}>
                 {
-                    PROJECTS_LIST.map(project => (<ProjectCard item={project}/>))
+                    PROJECTS_LIST.map((project,idx) => (<ProjectCard key={project.name + idx} item={project} />))
                 }
             </div>
         </div>

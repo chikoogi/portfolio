@@ -18,15 +18,15 @@ export default function ProjectCard({item}:{item: any}) {
             <div>
                 {
                     item.technologies.map((tech: string) => (
-                        <Badge text={tech} />
+                        <Badge text={tech} key={tech}/>
 
                     ))
                 }
             </div>
             <div className={"text-sm leading-6"}>
                 {
-                    item.responsibilities.map((r: string) => (
-                        <p>
+                    item.responsibilities.map((r: string, idx: number) => (
+                        <p key={idx}>
                             {r}
                         </p>
                     ))
