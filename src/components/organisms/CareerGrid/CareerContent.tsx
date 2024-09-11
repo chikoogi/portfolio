@@ -29,7 +29,7 @@ const CareerContent = forwardRef<HTMLDivElement, { offsetTop: number; offsetHeig
           const dy = window.scrollY - offsetTop;
           let scrollRatio = ((CAREER_WRAPPER_LENGTH - 1) * dy) / (offsetHeight - clientHeight);
           if (scrollRatio > CAREER_WRAPPER_LENGTH - 1) scrollRatio = CAREER_WRAPPER_LENGTH - 1;
-
+          else if (scrollRatio < 0) scrollRatio = 0;
           setScrollPos(scrollRatio * 100); // 스크롤 비율을 100%로 환산
         }
       };

@@ -37,8 +37,8 @@ export default function CareerSliderWrapper({
         <div className={"flex justify-center items-center mt-10 mb-10"}>
           <div className={"h-1 w-full bg-black relative"}></div>
         </div>
-        <div className={"h-1/3 flex"}>
-          {projects.map((p) => (
+        <div className={"h-1/3 flex gap-10"}>
+          {projects.map((p: any) => (
             <CardSecond key={p.name}>
               <div>{p.name}</div>
               <div>{p.period}</div>
