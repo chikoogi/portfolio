@@ -4,11 +4,13 @@ import IntroductionTemplate from "@/components/templates/IntroductionTemplate/In
 import ProjectTemplate from "@/components/templates/ProjectTemplate/ProjectTemplate";
 import CareerTemplate from "@/components/templates/CareerTemplate/CareerTemplate";
 import { useEffect, useRef, useState } from "react";
+import ContactTemplate from "@/components/templates/ContactTemplate/ContactTemplate";
 
 export default function PortfolioHome() {
   const introRef = useRef(null);
   const careerRef = useRef(null);
   const projectRef = useRef(null);
+  const contactRef = useRef(null);
   const [scrollTop, setScrollTop] = useState<boolean>(true);
 
   const scrollToSection = (ref: any) => {
@@ -66,7 +68,7 @@ export default function PortfolioHome() {
               transition: "border-color 0.4s ease",
             }}
           >
-            <button onClick={() => scrollToSection(projectRef)}>Archiving</button>
+            <button onClick={() => scrollToSection(contactRef)}>Contact</button>
           </li>
         </ul>
       </nav>
@@ -82,6 +84,9 @@ export default function PortfolioHome() {
 
       <section ref={projectRef}>
         <ProjectTemplate />
+      </section>
+      <section ref={contactRef}>
+        <ContactTemplate />
       </section>
     </div>
   );
