@@ -30,9 +30,15 @@ export default function ContactContent() {
             <a href={"https://github.com/chikoogi"} target={"_blank"}>
               <img src="/assets/images/iconGithub.svg" width="32" height="32" title={"GitHub"} />
             </a>
-            <a href={""} target={"_blank"}>
+            <a
+              href={"https://hurricane-limburger-3df.notion.site/b7bae42374304854b3e4eb7e7d9d3829"}
+              target={"_blank"}
+            >
+              <img src="/assets/images/iconNotion.svg" width="32" height="32" title={"Notion"} />
+            </a>
+            <a href={"/assets/files/portfolio_document.pdf"} target={"_blank"}>
               <img
-                src="/assets/images/iconNotion.svg"
+                src="/assets/images/iconPortfolio.svg"
                 width="32"
                 height="32"
                 title={"Portfolio Document"}
