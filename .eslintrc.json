@@ -17,8 +17,8 @@
     "prettier/prettier": ["error"],
     "react/react-in-jsx-scope": "off", // Next.js에서는 React import가 필요하지 않음
     "@typescript-eslint/no-unused-vars": ["warn"], // 사용되지 않는 변수 경고
-    "@typescript-eslint/explicit-module-boundary-types": "off", // 함수 반환 타입 강제 안 함
-    "react/no-unescaped-entities": "off",
-    "@next/next/no-page-custom-font": "off"
+    "@typescript-eslint/explicit-module-boundary-types": "off"// 함수 반환 타입 강제 안 함
+//    "react/no-unescaped-entities": "off",
+//    "@next/next/no-page-custom-font": "off"
   }
 }

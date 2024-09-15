@@ -1,7 +1,7 @@
 export default function IntroductionTemplate() {
   return (
     <div
-      className={"w-full h-screen"}
+      className={"w-screen h-screen "}
       style={{ backgroundImage: `url('/assets/images/noise-background.jpg')` }}
     >
       <div className={"flex justify-center items-center w-full h-full flex-col"}>

@@ -5,9 +5,12 @@ import ProjectTemplate from "@/components/templates/ProjectTemplate/ProjectTempl
 import CareerTemplate from "@/components/templates/CareerTemplate/CareerTemplate";
 import { useEffect, useRef, useState } from "react";
 import ContactTemplate from "@/components/templates/ContactTemplate/ContactTemplate";
+import SkillTemplate from "@/components/templates/SkillTemplate/SkillTemplate";
+import AboutTemplate from "@/components/templates/AboutTemplate/AboutTemplate";
 
 export default function PortfolioHome() {
-  const introRef = useRef(null);
+  const aboutRef = useRef(null);
+  const skillRef = useRef(null);
   const careerRef = useRef(null);
   const projectRef = useRef(null);
   const contactRef = useRef(null);
@@ -44,7 +47,15 @@ export default function PortfolioHome() {
               transition: "border-color 0.4s ease",
             }}
           >
-            <button onClick={() => scrollToSection(introRef)}>About</button>
+            <button onClick={() => scrollToSection(aboutRef)}>About</button>
+          </li>
+          <li
+            className={`border-t-[1px] border-primary-4 pt-4 hover:border-white hover:text-white`}
+            style={{
+              transition: "border-color 0.4s ease",
+            }}
+          >
+            <button onClick={() => scrollToSection(skillRef)}>Skill</button>
           </li>
           <li
             className={"border-t-[1px]  border-primary-4 pt-4 hover:border-white hover:text-white"}
@@ -74,8 +85,14 @@ export default function PortfolioHome() {
       </nav>
 
       {/* Sections with ref */}
-      <section ref={introRef}>
-        <IntroductionTemplate />
+      <IntroductionTemplate />
+
+      <section ref={aboutRef}>
+        <AboutTemplate />
+      </section>
+
+      <section ref={skillRef}>
+        <SkillTemplate />
       </section>
 
       <section ref={careerRef}>
