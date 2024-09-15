@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function ContactContent() {
   return (
     <div className={"w-full h-full"}>
@@ -28,20 +30,33 @@ export default function ContactContent() {
           </p>
           <p className={"mt-4 flex gap-4"}>
             <a href={"https://github.com/chikoogi"} target={"_blank"}>
-              <img src="/assets/images/iconGithub.svg" width="32" height="32" title={"GitHub"} />
+              <Image
+                src="/assets/images/iconGithub.svg"
+                width="32"
+                height="32"
+                title={"GitHub"}
+                alt={""}
+              />
             </a>
             <a
               href={"https://hurricane-limburger-3df.notion.site/b7bae42374304854b3e4eb7e7d9d3829"}
               target={"_blank"}
             >
-              <img src="/assets/images/iconNotion.svg" width="32" height="32" title={"Notion"} />
+              <Image
+                src="/assets/images/iconNotion.svg"
+                width="32"
+                height="32"
+                title={"Notion"}
+                alt={""}
+              />
             </a>
             <a href={"/assets/files/portfolio_document.pdf"} target={"_blank"}>
-              <img
+              <Image
                 src="/assets/images/iconPortfolio.svg"
                 width="32"
                 height="32"
                 title={"Portfolio Document"}
+                alt={""}
               />
             </a>
           </p>
