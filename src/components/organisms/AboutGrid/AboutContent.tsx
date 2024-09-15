@@ -12,8 +12,8 @@ export default function AboutContent() {
               className={"w-[20rem]"}
               src={"/assets/images/picture.jpg"}
               alt={""}
-              width={100}
-              height={100}
+              width={320}
+              height={420}
             />
           </div>
           <div className={"w-full text-primary-2 [&_p]:mb-5"}>
