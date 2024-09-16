@@ -6,8 +6,8 @@ export default function AboutContent() {
     <div className={"w-full"}>
       <div className={"flex flex-col w-full"}>
         <div className={"w-full text-center my-10 text-primary-2 text-2xl"}>ABOUT</div>
-        <div className={"w-full grid grid-cols-2"}>
-          <div className={"w-full flex justify-center items-center"}>
+        <div className={"w-full grid grid-cols-2 items-center"}>
+          <div className={"w-full h-full flex justify-center items-center"}>
             <Image
               className={"w-[20rem]"}
               src={"/assets/images/picture.jpg"}
@@ -16,7 +16,7 @@ export default function AboutContent() {
               height={420}
             />
           </div>
-          <div className={"w-full text-primary-2 [&_p]:mb-5"}>
+          <div className={"w-full text-primary-2 [&_p]:mb-5 "}>
             <p>안녕하세요. 저는 사용자 경험 최적화에 집중하는 프론트엔드 개발자 김지훈입니다.</p>
             <p>
               2018년부터 SI회사에 속해 개발을 본격적으로 시작하였으며 웹 어플리케이션 서비스에 대한

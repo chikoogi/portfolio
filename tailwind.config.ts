@@ -8,7 +8,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        noise: "url('/assets/images/noise-background.jpg')",
+        // noise: "url('/assets/images/noise-background.jpg')",
       },
       colors: {
         background: "var(--background)",
@@ -20,6 +20,7 @@ const config: Config = {
           "4": "#737272",
           "5": "#0D0D0D",
           "6": "#121111",
+          "7": "#A4A5A6",
         },
         ivory: {
           "1": "#fcfdf8",
