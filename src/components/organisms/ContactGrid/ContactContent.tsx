@@ -11,7 +11,7 @@ export default function ContactContent() {
           <p>FOR WATCHING</p>
         </div>
         <div className={"flex flex-col justify-center items-center"}>-</div>
-        <div className={"flex flex-col justify-center items-center gap-2"}>
+        <div className={"flex flex-col justify-center items-center gap-2 text-[14px]"}>
           <p>
             <b>NAME </b>
             <span>Kim Ji Hun</span>

@@ -82,7 +82,7 @@ html {
 body {
   color: #ededed;
   /*background: var(--background);*/
-  font-family: Rajdhani;
+  font-family: helvetica,arial,sans-serif;
   width: 100%;
   height: 100%;
 }
