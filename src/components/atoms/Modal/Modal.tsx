@@ -36,6 +36,6 @@ export default function Modal({ isOpen, onClose, children }: any) {
         <div className={"content w-full h-full"}>{children}</div>
       </div>
     </div>,
-    document.getElementById("modal-root")
+    document.getElementById("modal-root") as HTMLElement
   );
 }

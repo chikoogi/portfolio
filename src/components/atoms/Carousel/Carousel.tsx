@@ -91,7 +91,7 @@ export default function Carousel({ images }: any) {
           className="carousel-slides"
           style={{ ...carouselSlidesStyle, transform: `translateX(-${currentIndex * 100}%)` }}
         >
-          {images.map((image, index) => (
+          {images.map((image: string, index: number) => (
             <div className="carousel-slide" key={index} style={slideStyle}>
               <Image
                 className={"w-full h-full"}
@@ -107,7 +107,7 @@ export default function Carousel({ images }: any) {
       </div>
       <div className={"w-full"}>
         <div className={"flex justify-center items-center gap-1"}>
-          {images.map((_, i) => {
+          {images.map((_: string, i: number) => {
             const dotStyle = getDotStyle({ idx: i, curPage: currentIndex });
             return (
               <div key={i}>

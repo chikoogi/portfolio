@@ -1,5 +1,5 @@
 import ProjectCard from "@/components/molecules/ProjectCard/ProjectCard";
-import { PERSONAL_PROJECTS_LIST, PROJECTS_LIST } from "@/variables/common";
+import { PERSONAL_PROJECTS_LIST } from "@/variables/common";
 
 export default function ProjectContent() {
   return (

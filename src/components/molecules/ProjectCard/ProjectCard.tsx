@@ -2,7 +2,6 @@ import Card from "@/components/atoms/Card/Card";
 import Divider from "@/components/atoms/Divider/Divider";
 import { useState } from "react";
 import Modal from "@/components/atoms/Modal/Modal";
-import Image from "next/image";
 import Carousel from "@/components/atoms/Carousel/Carousel";
 import Badge from "@/components/atoms/Badge/Badge";
 
@@ -42,7 +41,7 @@ export default function ProjectCard({ item }: { item: any }) {
 
               <div className={"flex text-lg"}>
                 <span>인원: {item.teamCount}명</span>(
-                {item.team.map((v) => (
+                {item.team.map((v: any) => (
                   <div key={v.role} className={""}>
                     {v.role}:{v.people}
                   </div>
@@ -50,7 +49,7 @@ export default function ProjectCard({ item }: { item: any }) {
                 )
               </div>
               <div className={"flex flex-col gap-2 text-sm"}>
-                {item.description_detail.map((v) => (
+                {item.description_detail.map((v: string) => (
                   <p key={v}>{v}</p>
                 ))}
               </div>
@@ -58,13 +57,13 @@ export default function ProjectCard({ item }: { item: any }) {
               <div>
                 <b>주요 업무</b>
                 <div>
-                  {item.tasks.map((v) => (
+                  {item.tasks.map((v: string) => (
                     <p key={v}>{v}</p>
                   ))}
                 </div>
               </div>
               <div>
-                {item.skills.map((v) => (
+                {item.skills.map((v: string) => (
                   <Badge key={v} text={v} />
                 ))}
               </div>
