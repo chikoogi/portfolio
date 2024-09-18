@@ -27,7 +27,6 @@ const CareerContent = forwardRef<HTMLDivElement, { offsetTop: number; offsetHeig
         // 스크롤 위치를 비율로 계산하여 setScrollPos 업데이트
         if (isTransform) {
           const dy = window.scrollY - offsetTop;
-          console.log(((CAREER_WRAPPER_LENGTH - 1) * dy) / (offsetHeight - clientHeight));
           let scrollRatio = ((CAREER_WRAPPER_LENGTH - 1) * dy) / (offsetHeight - clientHeight);
 
           if (scrollRatio > CAREER_WRAPPER_LENGTH - 1) scrollRatio = CAREER_WRAPPER_LENGTH - 1;
