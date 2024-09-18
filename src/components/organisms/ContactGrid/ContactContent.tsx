@@ -50,7 +50,7 @@ export default function ContactContent() {
                 alt={""}
               />
             </a>
-            <a href={"/assets/files/portfolio_document.pdf"} target={"_blank"}>
+            <a href={"/assets/files/portfolio_document_202409.pdf"} target={"_blank"}>
               <Image
                 src="/assets/images/iconPortfolio.svg"
                 width="32"
