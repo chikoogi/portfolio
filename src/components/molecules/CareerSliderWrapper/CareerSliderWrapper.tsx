@@ -12,7 +12,6 @@ export default function CareerSliderWrapper({
   projects: any;
   minWidth?: number;
 }) {
-  const v = PROJECTS_LIST[0];
   return (
     <div
       className={"text-primary-1 first:pl-[30vw]"}
@@ -43,7 +42,7 @@ export default function CareerSliderWrapper({
               <div>{p.name}</div>
               <div>{p.period}</div>
               <div>
-                {p.technologies.map((tech: string) => (
+                {p.skills.map((tech: string) => (
                   <Badge text={tech} key={tech} />
                 ))}
               </div>

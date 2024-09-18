@@ -34,7 +34,7 @@ export default function PortfolioHome() {
   }, []);
 
   return (
-    <div className={"w-full h-auto overflow-hidden"}>
+    <div className={"w-full h-auto overflow-hidden min-w-[1600px]"}>
       <nav
         className={`fixed top-0 left-0 w-full z-10 p-4 font-[Rajdhani] flex justify-center items-center`}
       >
@@ -87,22 +87,22 @@ export default function PortfolioHome() {
       {/* Sections with ref */}
       <IntroductionTemplate />
 
-      <section ref={aboutRef}>
+      <section className={"w-full"} ref={aboutRef}>
         <AboutTemplate />
       </section>
 
-      <section ref={skillRef}>
+      <section className={"w-full"} ref={skillRef}>
         <SkillTemplate />
       </section>
 
-      <section ref={careerRef}>
+      <section className={"w-full"} ref={careerRef}>
         <CareerTemplate />
       </section>
 
-      <section ref={projectRef}>
+      <section className={"w-full"} ref={projectRef}>
         <ProjectTemplate />
       </section>
-      <section ref={contactRef}>
+      <section className={"w-full"} ref={contactRef}>
         <ContactTemplate />
       </section>
     </div>

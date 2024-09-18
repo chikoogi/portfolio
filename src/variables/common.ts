@@ -13,9 +13,11 @@ import portfolio01 from "@/assets/portfolio/image01.png";
 
 export const PROJECTS_LIST = [
   {
-    name: "Hyperdata / Solomon 시각화 모듈",
+    name: "Solomon BI Tool",
     period: "2022.05 ~ 현재",
-    technologies: [
+    tasks: [""],
+    description: "",
+    skills: [
       "React",
       "Typescript",
       "MobX",
@@ -36,7 +38,7 @@ export const PROJECTS_LIST = [
   {
     name: "Parkinson (mPDia, mN1q) / Stroke (cASPECTS, cELVO, cHS)",
     period: "2021.03 ~ 2022.04",
-    technologies: ["React", "Recoil", "Typescript", "Webpack", "SCSS", "MariaDB"],
+    skills: ["React", "Recoil", "Typescript", "Webpack", "SCSS", "MariaDB"],
     responsibilities: [
       "Dicom 의료 영상을 2D/3D로 출력하는 기능 개발",
       "Cornerstone, itk, vtk 등의 라이브러리를 사용해 커스텀 기능 개발",
@@ -47,16 +49,7 @@ export const PROJECTS_LIST = [
   {
     name: "국립 암센터",
     period: "2020.09 ~ 2021.01",
-    technologies: [
-      "Spring Framework",
-      "HTML",
-      "CSS",
-      "Javascript",
-      "Java",
-      "SQL(MariaDB)",
-      "C#",
-      "D3",
-    ],
+    skills: ["Spring Framework", "HTML", "CSS", "Javascript", "Java", "SQL(MariaDB)", "C#", "D3"],
     responsibilities: [
       "SHA256 해시 알고리즘을 이용해 키 암호화 파일 변환 프로그램 제작",
       "D3 차트를 활용해 mutation, oncoprint 등의 차트 개발",
@@ -66,7 +59,7 @@ export const PROJECTS_LIST = [
   {
     name: "아산병원 정밀의료플랫폼 프로젝트",
     period: "2019.10 ~ 2020.09",
-    technologies: [
+    skills: [
       "Spring Framework",
       "HTML",
       "CSS",
@@ -88,7 +81,7 @@ export const PROJECTS_LIST = [
   {
     name: "빅센 SA 패키징 자동화 [Elasticsearch 버전 자동화]",
     period: "2019.03 ~ 2019.05",
-    technologies: ["CentOS", "Docker", "MariaDB", "Elasticsearch", "logstash", "Java"],
+    skills: ["CentOS", "Docker", "MariaDB", "Elasticsearch", "logstash", "Java"],
     responsibilities: [
       "대용량 XML 데이터를 MariaDB로 파싱",
       "logstash를 이용해 Elasticsearch로 인덱싱",
@@ -97,7 +90,7 @@ export const PROJECTS_LIST = [
   {
     name: "건국대 BI 포털 프로젝트",
     period: "2018.12 ~ 2019.02",
-    technologies: ["Spring Framework", "HTML", "CSS", "Javascript", "jQuery", "MariaDB"],
+    skills: ["Spring Framework", "HTML", "CSS", "Javascript", "jQuery", "MariaDB"],
     responsibilities: [
       "사용자 공지사항 및 Q&A 게시판 개발",
       "관리자 페이지 및 로그 관리 기능 개발",
@@ -113,7 +106,7 @@ export const CAREER_LIST = [
     role: "프론트엔드개발자",
     description: [
       "BI 제품 개발 프로젝트에서 Front-End를 담당",
-      "React를 기반으로 개발, 주로 Plotly, d3를 이용해 시각화 모듈 개발",
+      "React를 기반으로 개발, 주로 Plotly, d3를 이용한 시각화 모듈 개발",
       "Atomic 디자인으로 폴더구조 구성",
       "Mobx를 이용한 상태관리",
       "Gitlab 정책 수립 및 Branch 관리",

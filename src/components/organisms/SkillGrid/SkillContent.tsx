@@ -54,7 +54,6 @@ export default function SkillContent() {
               <Badge text={"Vite"} />
               <Badge text={"Docker"} />
               <Badge text={"AWS Amplify"} />
-              <Badge text={"Firebase"} />
             </div>
           </div>
           <div
