@@ -4,7 +4,7 @@ import { useState } from "react";
 import Modal from "@/components/atoms/Modal/Modal";
 import Carousel from "@/components/atoms/Carousel/Carousel";
 import Badge from "@/components/atoms/Badge/Badge";
-
+import "./index.css";
 export default function ProjectCard({ item }: { item: any }) {
   const [isModal, setIsModal] = useState(false);
   return (
@@ -18,11 +18,12 @@ export default function ProjectCard({ item }: { item: any }) {
         <div className={""}>
           <div className={"w-full text-right my-10"}>
             <button
-              className={"bg-primary-6 text-white px-3 py-2 font-[Oswald] hover:opacity-70"}
+              className={"moreBtn px-3 py-2 font-[Oswald]"}
               type={"button"}
               onClick={() => {
                 setIsModal(true);
               }}
+              style={{}}
             >
               + MORE
             </button>
@@ -31,36 +32,42 @@ export default function ProjectCard({ item }: { item: any }) {
         </div>
       </Card>
       <Modal isOpen={isModal} onClose={() => setIsModal(false)}>
-        <div className={"w-[80vw] h-[800px] font-sans"}>
+        <div className={"w-[80vw] h-[700px]"}>
           <div className={"w-full h-full grid grid-cols-[60%_40%]"}>
             <Carousel images={item.images} />
-            <div className={"flex flex-col justify-center gap-4"}>
-              <div className={"text-2xl font-bold"}>
-                {item.name} <span className={"text-primary-7"}>( {item.period} )</span>
+            <div className={"flex flex-col justify-center"}>
+              <div className={"mb-2"}>
+                <span className={"font-bold text-2xl"}>{item.name}</span>
+                <span className={"ml-2 text-primary-7"}>({item.period})</span>
               </div>
-
-              <div className={"flex text-lg"}>
-                <span>인원: {item.teamCount}명</span>(
-                {item.team.map((v: any) => (
-                  <div key={v.role} className={""}>
-                    {v.role}:{v.people}
-                  </div>
-                ))}
-                )
+              <div className={"flex text-sm mb-2 font-sans"}>
+                <span>인원: {item.teamCount}명 - </span>
+                <span className={""}>
+                  {item.team.map((v: { role: string; people: number }) => (
+                    <span className={"ml-2"} key={v.role}>
+                      {v.role}({v.people})
+                    </span>
+                  ))}
+                </span>
               </div>
-              <div className={"flex flex-col gap-2 text-sm"}>
+              <div className={"flex flex-col gap-2 text-sm mb-4"}>
                 {item.description_detail.map((v: string) => (
                   <p key={v}>{v}</p>
                 ))}
               </div>
 
               <div>
-                <b>주요 업무</b>
-                <div>
-                  {item.tasks.map((v: string) => (
-                    <p key={v}>{v}</p>
-                  ))}
-                </div>
+                <div className={"font-semibold"}>주요 업무</div>
+                <ul className={"text-sm leading-6 list-disc pl-5 mb-5"}>
+                  {item.tasks.map((task: string, idx: number) => {
+                    const t = task.split(":");
+                    return (
+                      <li key={idx}>
+                        <b>{t[0]}</b> :<span>{t[1]}</span>
+                      </li>
+                    );
+                  })}
+                </ul>
               </div>
               <div>
                 {item.skills.map((v: string) => (

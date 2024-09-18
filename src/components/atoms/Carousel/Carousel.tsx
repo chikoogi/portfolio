@@ -19,7 +19,7 @@ const carouselContainerStyle: CSSProperties = {
 
 const carouselSlideWrapperStyle: CSSProperties = {
   width: "100%",
-  height: "100%",
+  // height: "100%",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -33,7 +33,7 @@ const carouselSlidesStyle: CSSProperties = {
 
 const slideStyle: CSSProperties = {
   minWidth: "100%",
-  maxHeight: "700px",
+  maxHeight: "50vh",
   transition: "transform 0.5s ease",
 };
 
@@ -105,7 +105,7 @@ export default function Carousel({ images }: any) {
           ))}
         </div>
       </div>
-      <div className={"w-full"}>
+      <div className={"w-full mt-5"}>
         <div className={"flex justify-center items-center gap-1"}>
           {images.map((_: string, i: number) => {
             const dotStyle = getDotStyle({ idx: i, curPage: currentIndex });

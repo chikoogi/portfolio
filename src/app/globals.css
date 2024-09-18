@@ -25,6 +25,13 @@
   }
 
   @font-face {
+    font-family: "Rajdhani-Medium";
+    src: url(fonts/Rajdhani-Medium.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
     font-family: "Oswald-ExtraLight";
     src: url(fonts/Oswald-ExtraLight.ttf) format('truetype');
     font-weight: normal;
@@ -38,12 +45,21 @@
     font-style: normal;
   }
 
+
   @font-face {
     font-family: "Oswald";
     src: url(fonts/Oswald-Regular.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: "Oswald-Medium";
+    src: url(fonts/Oswald-Medium.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 
   @font-face {
     font-family: "Oswald-SemiBold";
@@ -55,6 +71,36 @@
   @font-face {
     font-family: "Oswald-Bold";
     src: url(fonts/Oswald-Bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "NotoSansKR-Light";
+    src: url(fonts/NotoSansKR-Light.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: "NotoSansKR";
+    src: url(fonts/NotoSansKR-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "NotoSansKR-Medium";
+    src: url(fonts/NotoSansKR-Medium.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: "NotoSansKR-SemiBold";
+    src: url(fonts/NotoSansKR-SemiBold.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
   }
@@ -82,9 +128,11 @@ html {
 body {
   color: #ededed;
   /*background: var(--background);*/
-  font-family: helvetica,arial,sans-serif;
+  /*font-family: helvetica,arial,sans-serif;*/
+  font-family: Rajdhani-Medium, NotoSansKR;
   width: 100%;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 @layer utilities {

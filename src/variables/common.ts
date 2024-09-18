@@ -10,6 +10,15 @@ import uwhoo09 from "@/assets/uwhoo/image09.png";
 import uwhoo10 from "@/assets/uwhoo/image10.png";
 import cal01 from "@/assets/calculator/image01.png";
 import portfolio01 from "@/assets/portfolio/image01.png";
+import portfolio02 from "@/assets/portfolio/image02.png";
+import portfolio03 from "@/assets/portfolio/image03.png";
+import portfolio04 from "@/assets/portfolio/image04.png";
+import portfolio05 from "@/assets/portfolio/image05.png";
+import solomon01 from "@/assets/company/image (3).png";
+import hyperRn01 from "@/assets/company/image (5).png";
+import hyper01 from "@/assets/company/image (8).png";
+import heuron01 from "@/assets/company/image (9).png";
+import soft01 from "@/assets/company/image (10).png";
 
 export const TMAX_PROJECT_LIST = [
   {
@@ -38,6 +47,7 @@ export const TMAX_PROJECT_LIST = [
       "Emotion",
       "Tanstack-query",
     ],
+    images: [solomon01],
   },
   {
     name: "ERP Platform 개발 지원",
@@ -50,7 +60,8 @@ export const TMAX_PROJECT_LIST = [
     ],
     description:
       "기업 내 ERP 시스템 구축을 위한 프론트엔드 개발 지원 프로젝트로, 인사 및 재무 관련 모듈의 화면을 개발하고 프로젝트 초기 세팅을 진행하였습니다.",
-    skills: ["React", "TypeScript", "SCSS", "Webpack", "MobX", "Tanstack-query"],
+    skills: ["React", "TypeScript", "Tanstack-query", "Webpack", "MobX"],
+    images: [],
   },
   {
     name: "HyperData Renewal 시각화 모듈",
@@ -77,6 +88,7 @@ export const TMAX_PROJECT_LIST = [
       "Emotion",
       "react-beautiful-dnd",
     ],
+    images: [hyperRn01],
   },
   {
     name: "HyperData 빅데이터 플랫폼",
@@ -90,6 +102,7 @@ export const TMAX_PROJECT_LIST = [
     description:
       "HyperData는 다양한 유형의 데이터를 실시간으로 분석하여 비즈니스 의사결정을 돕는 빅데이터 통합 플랫폼입니다. 사용자가 원하는 데이터를 실시간으로 시각화하고 대시보드 기능을 통해 공유할 수 있습니다.",
     skills: ["React", "TypeScript", "Plotly", "D3.js", "SCSS", "Webpack", "Git"],
+    images: [hyper01],
   },
 ];
 
@@ -118,6 +131,7 @@ const HEURON_PROJECT_LIST = [
       "IndexedDB",
       "StompJS (WebSocket)",
     ],
+    images: [heuron01],
   },
 ];
 
@@ -142,6 +156,7 @@ const SOFTCEN_PROJECT_LIST = [
       "SQL (MariaDB)",
       "C#",
     ],
+    images: [],
   },
   {
     name: "아산병원 정밀의료플랫폼 프로젝트",
@@ -169,6 +184,7 @@ const SOFTCEN_PROJECT_LIST = [
       "Tomcat",
       "CentOS",
     ],
+    images: [soft01],
   },
   {
     name: "빅센 SA 패키징 자동화 프로젝트",
@@ -179,6 +195,7 @@ const SOFTCEN_PROJECT_LIST = [
     description:
       "대용량 XML 데이터를 MariaDB로 파싱하고 Elasticsearch로 인덱싱하는 자동화 시스템을 개발하는 프로젝트입니다.",
     skills: ["Java", "MariaDB", "Logstash", "Elasticsearch", "CentOS", "Docker"],
+    images: [],
   },
   {
     name: "건국대 BI 포털 프로젝트",
@@ -190,6 +207,7 @@ const SOFTCEN_PROJECT_LIST = [
     description:
       "연구 데이터를 시각화하고 관리할 수 있는 BI 포털로, 사용자와 관리자가 연구 데이터를 효과적으로 관리할 수 있도록 지원합니다.",
     skills: ["Spring Framework", "HTML", "CSS", "JavaScript", "jQuery", "Java", "MariaDB"],
+    images: [],
   },
   {
     name: "빅센메드 2 시각화 기능 개발",
@@ -212,6 +230,7 @@ const SOFTCEN_PROJECT_LIST = [
       "Vertica",
       "MariaDB",
     ],
+    images: [],
   },
   {
     name: "울산대, 경북대 빅센메드 2 레지스트리 개발 및 유지보수",
@@ -233,6 +252,7 @@ const SOFTCEN_PROJECT_LIST = [
       "Vertica",
       "MariaDB",
     ],
+    images: [],
   },
 ];
 export const PROJECTS_LIST = [
@@ -252,7 +272,6 @@ export const CAREER_LIST = [
       "React를 기반으로 개발, 주로 Plotly, d3를 이용한 시각화 모듈 개발",
       "Atomic 디자인으로 폴더구조 구성",
       "Mobx를 이용한 상태관리",
-      "Gitlab 정책 수립 및 Branch 관리",
     ],
     projects: TMAX_PROJECT_LIST,
   },
@@ -356,6 +375,6 @@ export const PERSONAL_PROJECTS_LIST = [
     ],
     skills: ["Next.js", "React", "Typescript", "Tailwind CSS"],
     repo: "https://github.com/chikoogi/portfolio",
-    images: [portfolio01],
+    images: [portfolio01, portfolio02, portfolio03, portfolio04, portfolio05],
   },
 ];

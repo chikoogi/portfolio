@@ -21,6 +21,7 @@ const config: Config = {
           "5": "#0D0D0D",
           "6": "#121111",
           "7": "#A4A5A6",
+          "8": "#F6F6F6",
         },
         ivory: {
           "1": "#fcfdf8",

@@ -3,9 +3,7 @@ import Image from "next/image";
 export default function ContactContent() {
   return (
     <div className={"w-full h-full"}>
-      <div
-        className={"w-full h-full flex flex-col justify-center items-center text-primary-4 gap-16"}
-      >
+      <div className={"w-full h-full flex flex-col justify-center items-center gap-16"}>
         <div className={"flex flex-col justify-center items-center gap-2 font-bold"}>
           <p>THANK YOU</p>
           <p>FOR WATCHING</p>

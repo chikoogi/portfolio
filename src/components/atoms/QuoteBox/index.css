@@ -1,0 +1,15 @@
+.quote-box {
+    position: relative;
+    /*padding-left: 40px; !* 큰따옴표 왼쪽 여백 *!*/
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.quote-box::before {
+    content: "“"; /* 큰따옴표 */
+    font-size: 10rem;
+    position: absolute;
+    left: -70px;
+    top: -75px;
+    color: #333; /* 큰따옴표 색상 */
+}

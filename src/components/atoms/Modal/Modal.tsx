@@ -27,7 +27,7 @@ export default function Modal({ isOpen, onClose, children }: any) {
   return createPortal(
     <div className="fixed inset-0 flex items-center justify-center z-50 text-black">
       <div className="fixed inset-0 opacity-70 bg-black" onClick={onClose}></div>
-      <div className="bg-white p-20 rounded-lg z-10 min-w-[1000px] min-h-[800px] relative">
+      <div className="bg-white p-10 rounded-lg z-10 min-w-[1000px] min-h-[800px] relative">
         <div className={"header"}>
           <button className={"absolute text-black right-5 top-5"} onClick={onClose}>
             <IconClose color={"#000"} />
