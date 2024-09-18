@@ -47,7 +47,7 @@ export default function CareerSliderWrapper({
                 ))}
               </div>
               <div className={"text-sm leading-6"}>
-                {p.responsibilities.map((r: string, idx: number) => (
+                {p.tasks.map((r: string, idx: number) => (
                   <p key={idx}>{r}</p>
                 ))}
               </div>

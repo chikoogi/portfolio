@@ -11,91 +11,234 @@ import uwhoo10 from "@/assets/uwhoo/image10.png";
 import cal01 from "@/assets/calculator/image01.png";
 import portfolio01 from "@/assets/portfolio/image01.png";
 
-export const PROJECTS_LIST = [
+export const TMAX_PROJECT_LIST = [
   {
     name: "Solomon BI Tool",
-    period: "2022.05 ~ 현재",
-    tasks: [""],
-    description: "",
+    period: "2023.12 - 2024.09",
+    tasks: [
+      "MVP 및 데모 화면 개발: 데모용 화면과 MVP 대시보드 화면을 설계하고 개발하여 솔루션의 필수 서비스를 전달 및 구현 화면 제공.",
+      "상태 관리: MobX와 Zustand를 도입해 상태 관리 문제를 해결하고, 성능 최적화 및 코드 가독성을 향상.",
+      "Drag & Drop 기능: react-dnd를 사용하여 차트와 위젯을 자유롭게 배치할 수 있는 Drag & Drop 대시보드 기능을 구현.",
+      "Atomic Design 도입: 컴포넌트 재사용성을 극대화하기 위해 Atomic Design 구조를 도입하고, 유지보수성과 확장성을 개선.",
+      "DashBoard / App  개발: Floating Pagination, Chart Page 등의 주요 화면 컴포넌트 개발.",
+    ],
+    description:
+      "Solomon은 기업 데이터를 통합 분석하고, 맞춤형 대시보드를 제공하는 BI Tool입니다. 사용자는 시각화된 데이터를 통해 실시간으로 비즈니스 의사결정을 내릴 수 있습니다.",
     skills: [
       "React",
-      "Typescript",
+      "TypeScript",
       "MobX",
       "Zustand",
+      "Plotly",
+      "D3.js",
+      "React-dnd",
       "Webpack",
       "Vite",
       "SCSS",
-      "emotion",
-      "Yarn-berry",
-    ],
-    responsibilities: [
-      "BI 플랫폼 ≫ 시각화 모듈 개발",
-      "D3, Plotly 를 이용한 17종 차트(Bar, Line, Boxplot, Pie, Radar 등등) 개발",
-      "플랫폼 홈화면 및 시각화 관련 대시보드 개발",
-      "공통 컴포넌트를 위한 Atomic 컴포넌트 개발",
+      "Emotion",
+      "Tanstack-query",
     ],
   },
   {
-    name: "Parkinson (mPDia, mN1q) / Stroke (cASPECTS, cELVO, cHS)",
-    period: "2021.03 ~ 2022.04",
-    skills: ["React", "Recoil", "Typescript", "Webpack", "SCSS", "MariaDB"],
-    responsibilities: [
-      "Dicom 의료 영상을 2D/3D로 출력하는 기능 개발",
-      "Cornerstone, itk, vtk 등의 라이브러리를 사용해 커스텀 기능 개발",
-      "공통 Component Module 개발",
-      "IndexedDB를 사용하여 영상 재로딩 이미지 단축",
+    name: "ERP Platform 개발 지원",
+    period: "2023.10 - 2023.11",
+    tasks: [
+      "프론트엔드 개발 지원: ERP 시스템 구축을 위한 프론트엔드 전반에 대한 지원을 제공.",
+      "지원 인력 선별 및 Leading: ERP 프로젝트를 위한 프론트엔드 개발 인력 선별 및 팀을 이끌며 프로젝트의 방향성을 설정.",
+      "프로젝트 Repository 및 환경 세팅: Git 기반 프로젝트 Repository를 구성하고, 환경 세팅을 통해 초기 개발 환경을 구축.",
+      "인사 및 재무 모듈 개발: ERP 시스템의 인사 관리 및 재무 관리 모듈의 프론트엔드 화면을 설계하고 개발.",
+    ],
+    description:
+      "기업 내 ERP 시스템 구축을 위한 프론트엔드 개발 지원 프로젝트로, 인사 및 재무 관련 모듈의 화면을 개발하고 프로젝트 초기 세팅을 진행하였습니다.",
+    skills: ["React", "TypeScript", "SCSS", "Webpack", "MobX", "Tanstack-query"],
+  },
+  {
+    name: "HyperData Renewal 시각화 모듈",
+    period: "2022.11 - 2023.09",
+    tasks: [
+      "프로젝트 세팅 및 전략 수립: React, yarn-berry, Tanstack-Query 등의 도구를 사용해 프로젝트 기본 환경을 세팅하고, Git 브랜치 및 MR 전략을 수립하여 협업 효율성을 높임.",
+      "차트 개발 전환: 기존 Plotly 기반의 차트를 D3.js로 전환하여 성능과 사용성을 개선하고, 더 복잡한 차트 상호작용을 구현.",
+      "대시보드 및 편집기 개발: Dashboard, Editor(사이드바, 설정 모달), 미리보기 화면 전반을 개발하고, 사용자 맞춤형 시각화 환경을 제공.",
+      "다국어 지원(i18n): 한/영 다국어 지원을 추가하고, 번들링 최적화 작업을 통해 글로벌 배포를 지원.",
+      "타팀 지원(SQL Editor): SQL 모듈 개발팀에 FE 기획 검토 및 피드백 제공뿐만 아니라 화면 개발 지원.",
+    ],
+    description:
+      "기존 HyperData 플랫폼의 리뉴얼 프로젝트로, 리뉴얼 TF팀에 참가하여 새로운 UI/UX 화면으로 최적화를 목표로 진행되었습니다.",
+    skills: [
+      "React",
+      "TypeScript",
+      "Plotly",
+      "D3.js",
+      "MobX",
+      "Tanstack-Query",
+      "Webpack",
+      "yarn-berry",
+      "i18n",
+      "Emotion",
+      "react-beautiful-dnd",
     ],
   },
+  {
+    name: "HyperData 빅데이터 플랫폼",
+    period: "2022.05 - 2022.10",
+    tasks: [
+      "Chart 개발: Plotly를 활용하여 HeatMap, BoxPlot, Radar, Combo, Waterfall 차트를 개발하여 복잡한 데이터를 직관적으로 표현.",
+      "시각화 기능 강화: D3.js를 사용해 Word Cloud, Network Diagram 같은 복잡한 데이터 시각화 기능을 개발.",
+      "대시보드 기능 개발: 글로벌 필터, 미리보기 및 대시보드 공유 기능을 추가해 데이터 분석 및 결과 공유를 용이하게 함.",
+      "차트 스타일링: 사용자 정의가 가능한 차트 Title, Label, Font 등의 스타일링 기능을 개발하여 시각적 맞춤화 제공.",
+    ],
+    description:
+      "HyperData는 다양한 유형의 데이터를 실시간으로 분석하여 비즈니스 의사결정을 돕는 빅데이터 통합 플랫폼입니다. 사용자가 원하는 데이터를 실시간으로 시각화하고 대시보드 기능을 통해 공유할 수 있습니다.",
+    skills: ["React", "TypeScript", "Plotly", "D3.js", "SCSS", "Webpack", "Git"],
+  },
+];
+
+const HEURON_PROJECT_LIST = [
+  {
+    name: "Parkinson (mPDia, mN1q) / Stroke (cASPECTS, cELVO, cHS) 프로젝트",
+    period: "2021.03 - 2022.04",
+    tasks: [
+      "의료 영상 출력: Cornerstone, ITK, VTK 등의 DICOM 관련 라이브러리를 사용하여 2D/3D 의료 영상 출력 기능을 개발하고, 사용자 맞춤형 커스텀 기능을 추가.",
+      "공통 컴포넌트 모듈 개발: 다른 제품에서도 사용할 수 있는 공통 컴포넌트 모듈을 개발하여 코드의 재사용성을 극대화.",
+      "영상 로딩 최적화: IndexedDB를 사용해 영상 재로딩 시간을 크게 단축하여 사용자 경험을 개선.",
+      "실시간 데이터 연동: WebSocket(StompJS)를 사용해 실시간 워크리스트 연동 기능을 구현.",
+    ],
+    description:
+      "의료 영상 분석 솔루션으로, 2D/3D 의료 영상을 시각화하고 사용자 맞춤형 분석 기능을 제공합니다.",
+    skills: [
+      "React",
+      "Recoil",
+      "TypeScript",
+      "Cornerstone",
+      "ITK",
+      "VTK",
+      "SCSS",
+      "Webpack",
+      "MariaDB",
+      "IndexedDB",
+      "StompJS (WebSocket)",
+    ],
+  },
+];
+
+const SOFTCEN_PROJECT_LIST = [
   {
     name: "국립 암센터",
-    period: "2020.09 ~ 2021.01",
-    skills: ["Spring Framework", "HTML", "CSS", "Javascript", "Java", "SQL(MariaDB)", "C#", "D3"],
-    responsibilities: [
-      "SHA256 해시 알고리즘을 이용해 키 암호화 파일 변환 프로그램 제작",
-      "D3 차트를 활용해 mutation, oncoprint 등의 차트 개발",
-      "관리 페이지 제작",
+    period: "2020.09 - 2021.01",
+    tasks: [
+      "차트 개발: D3.js를 사용해 mutation, oncoprint 등의 차트를 개발하여 연구자가 암 유전자를 쉽게 시각화하고 분석할 수 있도록 지원.",
+      "데이터 암호화: SHA256 해시 알고리즘을 사용해 키 암호화 파일을 변환하는 프로그램을 개발하여 데이터 보안성을 강화.",
+      "관리 페이지 개발: 연구 데이터 및 사용자 관리 기능을 제공하는 관리 페이지를 개발.",
     ],
-  },
-  {
-    name: "아산병원 정밀의료플랫폼 프로젝트",
-    period: "2019.10 ~ 2020.09",
+    description:
+      "암 연구 데이터를 시각화하고 분석할 수 있는 플랫폼으로, 연구자가 원하는 데이터를 쉽게 시각화할 수 있도록 지원합니다.",
     skills: [
       "Spring Framework",
       "HTML",
       "CSS",
-      "Javascript",
-      "jQuery",
-      "MariaDB",
-      "Oracle",
-      "Plotly",
-      "D3",
-    ],
-    responsibilities: [
-      "암종 선택 Collapse Tree 차트 개발 및 검색 기능 구현",
-      "Plotly를 이용한 다양한 차트 시각화 및 필터 기능 개발",
-      "암종 관련 API 사용해 데이터 출력 및 화면 개발",
-      "관리자 페이지 및 권한, 사용자, 로그 관리 기능 개발",
-      "플랫폼 유지보수",
+      "JavaScript",
+      "D3.js",
+      "Java",
+      "SQL (MariaDB)",
+      "C#",
     ],
   },
   {
-    name: "빅센 SA 패키징 자동화 [Elasticsearch 버전 자동화]",
-    period: "2019.03 ~ 2019.05",
-    skills: ["CentOS", "Docker", "MariaDB", "Elasticsearch", "logstash", "Java"],
-    responsibilities: [
-      "대용량 XML 데이터를 MariaDB로 파싱",
-      "logstash를 이용해 Elasticsearch로 인덱싱",
+    name: "아산병원 정밀의료플랫폼 프로젝트",
+    period: "2019.10 - 2020.09",
+    tasks: [
+      "시각화 차트 개발: D3.js를 사용해 암종 선택 Collapse Tree 차트를 개발하고, 데이터 연동 및 검색 기능을 구현.",
+      "Plotly 기반 차트 개발: Plotly를 이용해 Pie, Bar, Grid 차트 시각화 화면을 개발하고, 차트별 필터 기능을 추가.",
+      "데이터 저장 및 필터링: 개인화된 차트 데이터 저장 기능을 추가하고, 암종 관련 오픈 API(oncoKB, Hotspot)를 연동해 실시간 데이터 제공.",
+      "서버 및 시스템 관리: CentOS 서버에 Apache, Tomcat을 설치하고 연동하여 시스템을 배포 및 유지 관리.",
     ],
+    description:
+      "병원 데이터를 분석하고 연구자가 원하는 데이터를 시각화하여 연구에 활용할 수 있도록 지원하는 정밀의료 플랫폼입니다.",
+    skills: [
+      "Spring Framework",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "Plotly",
+      "D3.js",
+      "Java",
+      "MariaDB",
+      "Oracle",
+      "Apache",
+      "Tomcat",
+      "CentOS",
+    ],
+  },
+  {
+    name: "빅센 SA 패키징 자동화 프로젝트",
+    period: "2019.03 - 2019.05",
+    tasks: [
+      "데이터 처리 자동화: 대용량 XML 데이터를 Java를 사용해 MariaDB로 파싱하고, Logstash를 통해 Elasticsearch로 인덱싱하여 데이터 검색 성능을 최적화.",
+    ],
+    description:
+      "대용량 XML 데이터를 MariaDB로 파싱하고 Elasticsearch로 인덱싱하는 자동화 시스템을 개발하는 프로젝트입니다.",
+    skills: ["Java", "MariaDB", "Logstash", "Elasticsearch", "CentOS", "Docker"],
   },
   {
     name: "건국대 BI 포털 프로젝트",
-    period: "2018.12 ~ 2019.02",
-    skills: ["Spring Framework", "HTML", "CSS", "Javascript", "jQuery", "MariaDB"],
-    responsibilities: [
-      "사용자 공지사항 및 Q&A 게시판 개발",
-      "관리자 페이지 및 로그 관리 기능 개발",
+    period: "2018.12 - 2019.02",
+    tasks: [
+      "공지사항 및 Q&A 게시판 개발: 사용자들이 쉽게 접근할 수 있는 공지사항과 Q&A 게시판을 개발하여 커뮤니케이션 환경을 개선.",
+      "관리 페이지 개발: 권한 관리, 로그 관리 등의 기능을 포함한 관리자 페이지를 개발하여 시스템 관리 효율성을 높임.",
+    ],
+    description:
+      "연구 데이터를 시각화하고 관리할 수 있는 BI 포털로, 사용자와 관리자가 연구 데이터를 효과적으로 관리할 수 있도록 지원합니다.",
+    skills: ["Spring Framework", "HTML", "CSS", "JavaScript", "jQuery", "Java", "MariaDB"],
+  },
+  {
+    name: "빅센메드 2 시각화 기능 개발",
+    period: "2018.10 - 2018.12",
+    tasks: [
+      "시각화 기능 개발: Plotly를 사용해 시각화 화면을 개발하고, 차트별 데이터 변환 로직을 구현하여 연구자가 원하는 데이터를 손쉽게 시각화할 수 있도록 지원.",
+      "SQL 작업: 차트별로 필요한 SQL 작업을 수행하여, 시각화 데이터를 효율적으로 처리하고 화면에 반영.",
+    ],
+    description:
+      "의료 데이터를 시각화하는 연구 플랫폼으로, 연구자가 의료 데이터를 효과적으로 분석할 수 있도록 지원합니다.",
+    skills: [
+      "Spring Framework",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "Java",
+      "Plotly",
+      "SQL",
+      "Vertica",
+      "MariaDB",
     ],
   },
+  {
+    name: "울산대, 경북대 빅센메드 2 레지스트리 개발 및 유지보수",
+    period: "2018.05 - 2019.10",
+    tasks: [
+      "환자 데이터 관리: 경북대 간레지스트리, 울산대 외상레지스트리 시스템의 환자상세 페이지를 개발하고, 데이터를 조회, 검색, 출력하는 기능을 구현.",
+      "유지보수: 레지스트리 시스템의 유지보수 작업을 진행하며, 시스템 성능 최적화 및 사용성 개선을 수행.",
+    ],
+    description:
+      "연구자가 환자 데이터를 관리하고 분석할 수 있도록 지원하는 레지스트리 시스템을 구축하고 유지보수하는 프로젝트입니다.",
+    skills: [
+      "Spring Framework",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "Java",
+      "SQL",
+      "Vertica",
+      "MariaDB",
+    ],
+  },
+];
+export const PROJECTS_LIST = [
+  ...TMAX_PROJECT_LIST,
+  ...HEURON_PROJECT_LIST,
+  ...SOFTCEN_PROJECT_LIST,
 ];
 
 export const CAREER_LIST = [
@@ -103,7 +246,7 @@ export const CAREER_LIST = [
     period: "2022. 05 ~ 재직중",
     company: "티맥스에이앤씨 연구소",
     position: "연구원 팀원",
-    role: "프론트엔드개발자",
+    role: "FE 개발자",
     description: [
       "BI 제품 개발 프로젝트에서 Front-End를 담당",
       "React를 기반으로 개발, 주로 Plotly, d3를 이용한 시각화 모듈 개발",
@@ -111,37 +254,32 @@ export const CAREER_LIST = [
       "Mobx를 이용한 상태관리",
       "Gitlab 정책 수립 및 Branch 관리",
     ],
-    projects: ["Hyperdata 시각화 모듈 개발", "Solomon BI 제품 개발"],
+    projects: TMAX_PROJECT_LIST,
   },
   {
     period: "2021. 03 ~ 2022. 04 (1년 2개월)",
     company: "휴런 개발본부 FE팀",
     position: "전임연구원",
-    role: "웹개발자, FE, React",
+    role: "FE 개발자",
     description: [
       "A.I. 기반 영상진단기술 분석 솔루션 프로젝트에서 Front-End 담당",
       "React를 기반으로 DICOM 의료 영상 파일 출력 (cornerstone, itk, vtk 사용)",
       "공통 Component Module 개발",
     ],
-    projects: ["Parkinson (mPDia, mN1q) 제품 개발", "Stroke (cASPECTS, cELVO, cHS) 제품 개발"],
+    projects: HEURON_PROJECT_LIST,
   },
   {
     period: "2017. 12 ~ 2021. 02 (3년 3개월)",
     company: "소프트센 빅데이터기술팀",
     position: "사원",
-    role: "웹개발자, HTML, JavaScript, SpringFramework",
+    role: "웹 개발자, UI",
     description: [
       "Spring Framework 기반 웹어플리케이션 개발",
       "병원 내 빅데이터 시각화 작업 (D3, Plotly, JqxGrid 사용)",
       "Java로 Controller/Service 개발 및 타 시스템 연동",
       "Linux 서버 관리 및 운영",
     ],
-    projects: [
-      "아산병원 정밀의료 통합 플랫폼 구축",
-      "건국대 BI 포털 구축",
-      "경북대, 울산대 CDW 구축",
-      "경북대, 울산대 레지스트리 구축",
-    ],
+    projects: SOFTCEN_PROJECT_LIST,
   },
 ];
 
