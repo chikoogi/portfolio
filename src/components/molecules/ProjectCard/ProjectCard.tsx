@@ -1,3 +1,5 @@
+"use client";
+
 import Card from "@/components/atoms/Card/Card";
 import Divider from "@/components/atoms/Divider/Divider";
 import { useState } from "react";
@@ -5,6 +7,7 @@ import Modal from "@/components/atoms/Modal/Modal";
 import Carousel from "@/components/atoms/Carousel/Carousel";
 import Badge from "@/components/atoms/Badge/Badge";
 import "./index.css";
+
 export default function ProjectCard({ item }: { item: any }) {
   const [isModal, setIsModal] = useState(false);
   return (

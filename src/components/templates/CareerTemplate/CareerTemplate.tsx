@@ -1,3 +1,5 @@
+"use client";
+
 import CareerContent from "@/components/organisms/CareerGrid/CareerContent";
 import { useEffect, useRef, useState } from "react";
 
